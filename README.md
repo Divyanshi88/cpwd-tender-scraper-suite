@@ -1,71 +1,155 @@
-# CPWD Tender Scraper
+# 🚀 CPWD Tender Scraper Suite
 
-This Python script scrapes tender data from the CPWD e-Tender website (https://etender.cpwd.gov.in/).
+A Python-based scraper that automates the extraction of tender data from the [CPWD e-Tendering Portal](https://etender.cpwd.gov.in/), using multiple scraping methods to ensure high reliability and efficiency.
 
-## Features
+---
 
-- Navigates to the "New Tenders" tab and selects the "All" sub-tab
-- Extracts details for the first 20 tenders listed
-- Saves the data to a CSV file with renamed columns
+## 📖 Project Overview
+The **CPWD Tender Scraper Suite** is a comprehensive tool designed to scrape the latest tenders from the CPWD e-Tendering website. It automates the tedious process of tender data collection, providing users with a CSV file containing clean and well-structured information.
 
-## Fields Extracted
+This suite offers multiple scraping approaches, including browser-based and non-browser-based techniques, to maximize scraping success even if the website structure or anti-bot measures change.
 
-The script extracts the following fields:
-1. NIT/RFP NO (saved as "ref_no")
-2. Name of Work / Subwork / Packages (saved as "title")
-3. Estimated Cost (saved as "tender_value")
-4. Bid Submission Closing Date & Time (saved as "bid_submission_end_date")
-5. EMD Amount (saved as "emd")
-6. Bid Opening Date & Time (saved as "bid_open_date")
+---
 
-## Installation
+## ✨ Key Features
+- 🔎 **Automatic Navigation:** Navigates directly to the **"New Tenders" → "All"** section.
+- 📥 **Tender Extraction:** Collects information for the **first 20 tenders** listed on the site.
+- 💾 **CSV Export:** Saves the extracted data to a CSV file with renamed, user-friendly columns.
+- 🛠️ **Multi-Approach Scraping:** Includes multiple scraping techniques:
+  - Requests + BeautifulSoup
+  - Selenium WebDriver
+  - Undetected ChromeDriver
+  - Playwright
+- 🧩 **Fallback Handling:** Automatically generates sample data if scraping fails.
+- 🚀 **Robust & Flexible:** Handles minor website changes and offers interactive mode for CAPTCHA resolution.
 
-1. Install Python 3.8 or higher
-2. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
+---
 
-## Usage
+## 📂 Extracted Fields
+The following tender details are extracted and saved:
+- **Tender Reference Number** → `ref_no`
+- **Tender Title / Work Description** → `title`
+- **Estimated Tender Value** → `tender_value`
+- **Bid Submission End Date & Time** → `bid_submission_end_date`
+- **EMD Amount** → `emd`
+- **Bid Opening Date & Time** → `bid_open_date`
 
-For the most reliable results, use the combined script:
-```
+---
+
+## 📦 Folder Structure
+cpwd-tender-scraper-suite/
+├── cpwd_scraper.py
+├── cpwd_scraper_bs4.py
+├── cpwd_scraper_combined.py
+├── cpwd_scraper_interactive.py
+├── cpwd_scraper_playwright.py
+├── cpwd_scraper_requests.py
+├── cpwd_scraper_robust.py
+├── cpwd_scraper_undetected.py
+├── requirements.txt
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Divyanshi88/cpwd-tender-scraper-suite.git
+   cd cpwd-tender-scraper-suite
+Install the Dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Ensure Chrome Browser is Installed:
+
+Required for Selenium-based scripts.
+
+Make sure ChromeDriver version matches your Chrome browser version.
+
+🚀 Usage
+Run the combined script for the best performance and fallback mechanisms:
+
+bash
+Copy
+Edit
 python cpwd_scraper_combined.py
-```
+This script automatically tries the following scraping methods in order:
 
-This script will try multiple approaches in sequence until one succeeds:
-1. Requests + BeautifulSoup approach (no browser automation)
-2. Selenium approach (standard browser automation)
-3. Undetected-ChromeDriver approach (better at avoiding detection)
-4. Playwright approach (modern browser automation)
+Requests + BeautifulSoup (lightweight and fast)
 
-If all approaches fail, it will generate sample data as a fallback.
+Selenium WebDriver (standard browser automation)
 
-## Alternative Scripts
+Undetected ChromeDriver (bypasses anti-bot detection)
 
-Several alternative implementations are provided:
+Playwright (modern and stealthy browser automation)
 
-- **cpwd_scraper.py**: Basic version using Selenium
-- **cpwd_scraper_bs4.py**: Enhanced version using BeautifulSoup for better parsing
-- **cpwd_scraper_interactive.py**: Version that can handle CAPTCHA challenges with manual intervention
-- **cpwd_scraper_robust.py**: Version with extensive error handling and multiple strategies
-- **cpwd_scraper_undetected.py**: Uses undetected-chromedriver to avoid detection
-- **cpwd_scraper_playwright.py**: Uses Playwright for browser automation
-- **cpwd_scraper_requests.py**: Uses requests and BeautifulSoup without browser automation
-- **cpwd_scraper_combined.py**: Tries all approaches in sequence
+👉 If all methods fail, sample fallback data will still be generated.
 
-## Notes
+🛠️ Available Scripts
+Script Name	Description
+cpwd_scraper.py	Basic Selenium version
+cpwd_scraper_bs4.py	BeautifulSoup-enhanced version
+cpwd_scraper_interactive.py	Manual CAPTCHA handling version
+cpwd_scraper_robust.py	Advanced error handling version
+cpwd_scraper_undetected.py	Uses undetected-chromedriver
+cpwd_scraper_playwright.py	Playwright-based version
+cpwd_scraper_requests.py	Lightweight requests + BeautifulSoup version
+cpwd_scraper_combined.py	Recommended: Tries all methods automatically
 
-- The scripts require various dependencies depending on the approach used
-- All dependencies are listed in requirements.txt
-- Some approaches require a Chrome browser to be installed
-- The combined script will automatically install missing dependencies
+🚑 Troubleshooting
+Ensure Google Chrome and ChromeDriver versions are compatible.
 
-## Troubleshooting
+Try different scraping approaches if a method fails.
 
-If you encounter issues:
+For CAPTCHA issues, use the interactive version.
 
-1. Try running the script with different approaches
-2. Check if your Chrome browser version is compatible with ChromeDriver
-3. For CAPTCHA issues, use the interactive version
-4. If all else fails, the combined script will generate sample data
+If all scraping methods fail, the combined script will generate sample fallback data automatically.
+
+🔧 Requirements
+Python 3.8 or higher
+
+Chrome browser (for Selenium-based methods)
+
+Required Python libraries (listed in requirements.txt)
+
+📜 License
+This project is for educational purposes only. Use it responsibly and ensure compliance with the terms of the CPWD e-Tendering Portal.
+
+🙌 Acknowledgements
+CPWD e-Tendering Portal: https://etender.cpwd.gov.in/
+
+Python Libraries: Selenium, BeautifulSoup, Playwright, Requests
+
+If you find this project useful, feel free to ⭐ star the repository and share your feedback!
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ Additional Files You May Need:
+#### Example `.gitignore`
+```gitignore
+__pycache__/
+*.pyc
+*.log
+*.csv
+.env
+Example requirements.txt
+text
+Copy
+Edit
+requests
+beautifulsoup4
+selenium
+playwright
+undetected-chromedriver
+pandas
