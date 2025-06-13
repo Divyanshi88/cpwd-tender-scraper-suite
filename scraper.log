@@ -1,0 +1,37 @@
+2025-06-05 22:24:14,031 - INFO - Starting CPWD tender scraping...
+2025-06-05 22:24:14,032 - INFO - Attempting to scrape in headless mode...
+2025-06-05 22:24:14,032 - INFO - ====== WebDriver manager ======
+2025-06-05 22:24:18,604 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:24:18,890 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:24:19,052 - INFO - There is no [mac64] chromedriver "137.0.7151.68" for browser google-chrome "137.0.7151" in cache
+2025-06-05 22:24:19,060 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:24:19,514 - INFO - WebDriver version 137.0.7151.68 selected
+2025-06-05 22:24:19,518 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.68/mac-arm64/chromedriver-mac-arm64.zip
+2025-06-05 22:24:19,518 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.68/mac-arm64/chromedriver-mac-arm64.zip
+2025-06-05 22:24:19,600 - INFO - Driver downloading response is 200
+2025-06-05 22:24:21,212 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:24:21,481 - INFO - Driver has been saved in cache [/Users/divayanshisharama/.wdm/drivers/chromedriver/mac64/137.0.7151.68]
+2025-06-05 22:24:21,486 - ERROR - Failed to initialize Chrome driver: [Errno 8] Exec format error: '/Users/divayanshisharama/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-06-05 22:24:21,486 - ERROR - An error occurred: [Errno 8] Exec format error: '/Users/divayanshisharama/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-06-05 22:24:21,486 - INFO - Headless mode failed or returned insufficient data. Switching to interactive mode...
+2025-06-05 22:24:21,486 - INFO - ====== WebDriver manager ======
+2025-06-05 22:24:21,594 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:24:21,801 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:24:21,949 - INFO - Driver [/Users/divayanshisharama/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-05 22:24:21,953 - ERROR - Failed to initialize Chrome driver: [Errno 8] Exec format error: '/Users/divayanshisharama/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-06-05 22:24:21,953 - ERROR - An error occurred: [Errno 8] Exec format error: '/Users/divayanshisharama/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-06-05 22:24:21,953 - ERROR - Failed to scrape tender data.
+2025-06-05 22:25:16,265 - INFO - Starting CPWD tender scraping...
+2025-06-05 22:25:16,265 - INFO - Attempting to scrape in headless mode...
+2025-06-05 22:25:16,266 - INFO - ====== WebDriver manager ======
+2025-06-05 22:25:16,410 - INFO - There is no [mac_arm64] chromedriver "latest" for browser google-chrome "137.0.7151" in cache
+2025-06-05 22:25:16,410 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:25:16,853 - ERROR - Failed to initialize Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/LATEST_RELEASE_137.0.7151
+2025-06-05 22:25:16,853 - ERROR - An error occurred: There is no such driver by url https://chromedriver.storage.googleapis.com/LATEST_RELEASE_137.0.7151
+2025-06-05 22:25:16,855 - INFO - Headless mode failed or returned insufficient data. Switching to interactive mode...
+2025-06-05 22:25:16,855 - INFO - ====== WebDriver manager ======
+2025-06-05 22:25:16,923 - INFO - There is no [mac_arm64] chromedriver "latest" for browser google-chrome "137.0.7151" in cache
+2025-06-05 22:25:16,923 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-05 22:25:17,301 - ERROR - Failed to initialize Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/LATEST_RELEASE_137.0.7151
+2025-06-05 22:25:17,301 - ERROR - An error occurred: There is no such driver by url https://chromedriver.storage.googleapis.com/LATEST_RELEASE_137.0.7151
+2025-06-05 22:25:17,306 - ERROR - Failed to scrape tender data.
